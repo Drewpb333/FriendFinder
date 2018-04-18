@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FriendFinder</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  <style>
+    .jumbotron{
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-color: #337ab7;
+      color: white;
+    }
+    h3{
+      padding: 5px;
+      background-color: #337ab7;
+      color: white;
+      max-width: 14%;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron text-center">
+    <h1>Friend Questionnaire</h1>
+    <hr>
+    </div>
+
+    <h3>
+      <strong>About You</strong>
+    </h3>
+    <h4>Name (Required)</h4>
+    <input type="text" id="name" class="name-and-image" required>
+
+    <h4>Link to Photo Image (Required)</h4>
+    <input type="text" id="photo" class="name-and-image" required>
+
+    <hr>
+
+    <h3>
+      <strong>Question 1</strong>
+    </h3>
+    <h4>You enjoy deep conversations as opposed to small talk.</h4>
+    <select class="questions" id="q1">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 2</strong>
+    </h3>
+    <h4>You choose quality over quantity in friendships.</h4>
+    <select class="questions" id="q2">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h3>
+      <strong>Question 3</strong>
+    </h3>
+    <h4>A quiet, relaxing night with a few friends sounds better than a loud gathering with a lot of people.</h4>
+    <select class="questions" id="q3">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h3>
+      <strong>Question 4</strong>
+    </h3>
+    <h4>You consider yourself very attuned to other people's feelings.</h4>
+    <select class="questions" id="q4">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h3>
+      <strong>Question 5</strong>
+    </h3>
+    <h4>You think of yourself as a rational person.</h4>
+    <select class="questions" id="q5">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h3>
+      <strong>Question 6</strong>
+    </h3>
+    <h4>You enjoy exploring new cultures and learning more about the world.</h4>
+    <select class="questions" id="q6">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h3>
+      <strong>Question 7</strong>
+    </h3>
+    <h4>You consider yourself an avid reader.</h4>
+    <select class="questions" id="q7">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 8</strong>
+    </h3>
+    <h4>You prefer Coke over Pepsi.</h4>
+    <select class="questions" id="q8">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 9</strong>
+    </h3>
+    <h4>You believe that dogs are better than cats.</h4>
+    <select class="questions" id="q9">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 10</strong>
+    </h3>
+    <h4>You enjoy long walks on the beach.</h4>
+    <select class="questions" id="q10">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <br>
+    <br>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary" id="submit">  
+        <!-- btn-lg btn-block -->
+      Submit</button>
+
+    <hr>
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <a href="/api/friends">API Friends List</a> |
+          <a href="https://github.com/Drewpb333/FriendFinder#readme">GitHub Repo</a>
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Modal for most compatible -->
+  <div id="mostCompatible">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title">
+            <strong>Your Most Compatible Friend</strong>
+          </h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="mostCompatibleName"></h2>
+          <img id="mostCompatibleImg" alt="Photo of Most Compatible Friend">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    // sends form data to server
+    $("#mostCompatible").hide();
+    //called when JSON received by browser
+    function showModal (data){
+      $("mostCompatible").show();
+      $("#mostCompatibleName").text(data.name);
+      $("#mostCompatibleImg").attr("src", data.photo);
+      $("mostCompatible").modal("toggle");
+    };
+
+    $("#submit").on("click", function (event) {
+      event.preventDefault();
+      //boolean for making sure entire form is filled out. default is true
+      var filledOut = true;
+
+      //checks name and image input
+      $(".name-and-image").each(function () {
+        if ($(this).val() === "") {
+          filledOut = false;
+        }
+      });
+
+      // checks question responses
+      $(".questions").each(function () {
+        if ($(this).val() === "") {
+          filledOut = false;
+        }
+      });
+
+      // If all required fields are filled
+      if (filledOut) {
+        console.log("something");
+        // Create an object for the user"s data
+        var newPerson = {
+          name: $("#name").val(),
+          photo: $("#photo").val(),
+          scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+          ]
+        };
+        console.log(newPerson);
+        //sends questionnaire info to server
+        $.post("/api/friends", newPerson, function (data) {
+          //adds info to modal
+          showModal(data);
+        });
+        // refrains from get and post method and asks user to fill out the form again
+      } else {
+        alert("Not all fields have been filled out. Please fill out all questions and submit again.")
+      }
+    });
+  </script>
+
+</body>
+
+</html>

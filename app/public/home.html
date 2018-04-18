@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FriendFinder</title>
 
   <!-- Latest compiled and minified CSS & JS -->
@@ -18,9 +19,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
   <style>
-    style {
-      max-width: 60%;
-      max-height: 60%
+    #main-container{
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    img {
+      max-width: 40%;
+      max-height: 40%
     }
   </style>
 </head>
@@ -28,18 +33,18 @@
 <body>
   <div class="container">
 
-    <div class="jumbotron text-center">
-      <img src="../data/friendsImage.jpg" class="img-circle">
+    <div class="jumbotron text-center" id="main-container">
+      <img src="http://www.executivestyle.com.au/content/dam/images/3/4/m/d/3/image.related.articleLeadwide.620x349.34hlt.png/1428456294765.jpg" class="img-circle" alt="Friend's Image">
       <h1>
         Welcome to FriendFinder!</h1>
       <hr>
-      <h2>Click the button below to take our survey and find your most compatable friend from our database.</h2>
+      <h2>Click the button below to take our questionnaire and find your most compatible friend from our database.</h2>
       <br>
 
       <div class="text-center">
         <a href="/survey">
-          <button class="btn btn-lg btn-success">
-            <span class="glyphicon glyphicon-credit-card"></span> Start survey</button>
+          <button class="btn btn-lg btn-primary">
+            <span class="glyphicon"></span> Start questionnaire</button>
         </a>
       </div>
 
@@ -48,8 +53,7 @@
     <footer class="footer">
       <div class="container">
         <p>
-          <a href="/api/tables">API Table Link</a> |
-          <a href="/api/waitlist">API Wait List</a> |
+          <a href="/api/friends">API Friends List</a> |
           <a href="https://github.com/Drewpb333/FriendFinder#readme">GitHub Repo</a>
         </p>
       </div>
