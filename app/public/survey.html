@@ -273,6 +273,8 @@
           //adds info to modal
           $("#mostCompatibleName").text(data.name);
           $("#mostCompatibleImg").attr("src", data.photo);
+          $("#mostCompatibleImg").css("max-height", "300px");
+          $("mostCompatibleImg").css("max-width", "300px");
           $("#mostCompatible").modal("toggle");
         });
         // refrains from get and post method and asks user to fill out the form again
